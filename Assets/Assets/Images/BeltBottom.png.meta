@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8b538747f7769a145a9fb7f628857ecb
+guid: a939ba2918b8b1e48836892c2bd87d6f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5756541970600169204
-    second: Green_rectangle.svg_0
+      213: -8219663054034574157
+    second: BeltBottom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Green_rectangle.svg_0
+      name: BeltBottom_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1200
-        height: 887
+        y: 389
+        width: 1920
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fe004c3c6853ef40800000000000000
-      internalID: 5756541970600169204
+      spriteID: 3b4edd28004eded80800000000000000
+      internalID: -8219663054034574157
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Green_rectangle.svg_0: 5756541970600169204
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

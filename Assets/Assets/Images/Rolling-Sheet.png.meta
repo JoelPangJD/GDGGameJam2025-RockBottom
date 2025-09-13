@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8b538747f7769a145a9fb7f628857ecb
+guid: 5ebbc0846de771b4bab6f2985b40c139
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5756541970600169204
-    second: Green_rectangle.svg_0
+      213: -2376327829296699825
+    second: Rolling-Sheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -53,7 +53,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Green_rectangle.svg_0
+      name: Rolling-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1200
-        height: 887
+        width: 500
+        height: 391
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fe004c3c6853ef40800000000000000
-      internalID: 5756541970600169204
+      spriteID: f4625e8fd66950fd0800000000000000
+      internalID: -2376327829296699825
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d86707271fd9d89458d56840ade581ec
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Green_rectangle.svg_0: 5756541970600169204
+      Rolling-Sheet_0: -2376327829296699825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

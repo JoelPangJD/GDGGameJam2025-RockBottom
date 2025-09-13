@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 8b538747f7769a145a9fb7f628857ecb
+guid: b3d4ee68e9117e34e9b64e08ed4598a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5756541970600169204
-    second: Green_rectangle.svg_0
+      213: -8567197914586707100
+    second: PlaceHolderFood_0
+  - first:
+      213: -487622824721082874
+    second: PlaceHolderFood_1
+  - first:
+      213: -3638609276337569870
+    second: PlaceHolderFood_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Green_rectangle.svg_0
+      name: PlaceHolderFood_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1200
-        height: 887
+        x: 889
+        y: 659
+        width: 142
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fe004c3c6853ef40800000000000000
-      internalID: 5756541970600169204
+      spriteID: 46b879c33e23b1980800000000000000
+      internalID: -8567197914586707100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderFood_1
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 426
+        width: 202
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606902cdf9d9b39f0800000000000000
+      internalID: -487622824721082874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderFood_2
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 426
+        width: 202
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf357f2420118dc0800000000000000
+      internalID: -3638609276337569870
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Green_rectangle.svg_0: 5756541970600169204
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

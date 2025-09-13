@@ -107,7 +107,12 @@ MonoBehaviour:
   - {fileID: 9008702226777717888, guid: 48a9e45aa8c567f4ea01eae278254d28, type: 3}
   - {fileID: -8640655427673122094, guid: 9dce7cd107eeba34b9c38abf34ab5c95, type: 3}
   - {fileID: -193896956934802636, guid: c63b4cf43cde995448b5dd893f3a2ac1, type: 3}
+  speed: 5
   spriteRenderer: {fileID: 2306350330981878999}
+  rb: {fileID: 4035881928266613657}
+  goodParticle: {fileID: 7972004744981781726, guid: 8e9ecc3f058ff9f458857898d5b2ae45, type: 3}
+  perfectParticle: {fileID: 7972004744981781726, guid: df692c79c54b381449bbced22964409c, type: 3}
+  travelDistance: 1
 --- !u!61 &8029366048028359289
 BoxCollider2D:
   m_ObjectHideFlags: 0
