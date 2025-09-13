@@ -23,14 +23,13 @@ public class MusicManager : MonoBehaviour
 
     public float startingTempoScale = 0.6f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
-        else
+        else if(instance != this)
         {
             Destroy(gameObject);
         }
