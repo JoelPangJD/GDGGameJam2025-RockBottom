@@ -105,7 +105,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
+        width: 517
         height: 391
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -117,6 +117,50 @@ TextureImporter:
       bones: []
       spriteID: f4625e8fd66950fd0800000000000000
       internalID: -2376327829296699825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rolling-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 0
+        width: 517
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8f99b427439b641ab340f45d3c36f3
+      internalID: 846296007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rolling-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 0
+        width: 517
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb3d2f1ed3386048bd7bd2f731815a1
+      internalID: 497212078
       vertices: []
       indices: 
       edges: []
@@ -136,6 +180,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Rolling-Sheet_0: -2376327829296699825
+      Rolling-Sheet_1: 846296007
+      Rolling-Sheet_2: 497212078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

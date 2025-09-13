@@ -105,18 +105,62 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1551
+        width: 517
         height: 391
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fd98c4c79f112aab0800000000000000
-      internalID: -4998412873197909537
+      spriteID: 5577283f676cf3b40a767ae124941f19
+      internalID: 847953757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slicing-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 0
+        width: 517
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507656ba2422c77419658070093a03e8
+      internalID: -107851602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slicing-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 0
+        width: 517
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e58d44118739ad4981bc8bb13bf3111
+      internalID: 8216073
       vertices: []
       indices: 
       edges: []
@@ -125,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a330aaa374b6bc24cbca1482b521f1a0
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +178,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Slicing-Sheet_0: 847953757
+      Slicing-Sheet_1: -107851602
+      Slicing-Sheet_2: 8216073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
