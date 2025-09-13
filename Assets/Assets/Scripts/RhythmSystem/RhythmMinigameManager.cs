@@ -80,8 +80,8 @@ public class RhythmMinigameManager : MonoBehaviour
         //Get the distance the notes have to travel to reach the hit point from the spawn points
         noteTravelDistance = Vector2.Distance(leftSpawnPoints[0].position, rightSpawnPoints[0].position);
 
-        //test spawn code
-        StartCoroutine(SpawnNotes());
+        
+        StartSpawning();
     }
 
     // Update is called once per frame
@@ -111,10 +111,13 @@ public class RhythmMinigameManager : MonoBehaviour
             if (hitNote.hitDistance <= perfectHitRange)
             {
                 hitNote.hitNote.GetComponent<RhythmNote>().HitPerfectNote();
+                GameManager.instance.AddScore(15);
+                GameManager.instance.AddLife(1);
             }
             else if (hitNote.hitDistance <= goodHitRange)
             {
                 hitNote.hitNote.GetComponent<RhythmNote>().HitNote();
+                GameManager.instance.AddScore(5);
             }
             else
             {
@@ -203,5 +206,33 @@ public class RhythmMinigameManager : MonoBehaviour
             return new RhythmNoteHitData(0);
         }
         return new RhythmNoteHitData(hit.collider.gameObject, hit.distance);
+    }
+
+    public void StopSpawning()
+    {
+        //Stop the spawning of notes
+        StopAllCoroutines();
+        Debug.Log("Stopped Spawning");
+    }
+
+    public void StartSpawning()
+    {
+        //Start the spawning of notes
+        StartCoroutine(SpawnNotes());
+    }
+
+    public void LoseGame() 
+    {
+        //Stop the spawning of notes
+        StopSpawning();
+        //Miss all active notes
+        foreach (RhythmNote note in rhythmNotePool)
+        {
+            if (note.gameObject.activeSelf)
+            {
+                note.MissNote();
+            }
+        }
+        Debug.Log("Lost game");
     }
 }
