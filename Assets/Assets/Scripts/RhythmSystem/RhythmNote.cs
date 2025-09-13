@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RhythmNote : MonoBehaviour
@@ -27,7 +26,7 @@ public class RhythmNote : MonoBehaviour
     }
 
     void Update() {
-        moveNote();
+        MoveNote();
     }
 
     public void InitaliseNote(GameManager.DirEnum direction, GameManager.DirEnum noteDirection, float travelDistance, float speed)
@@ -53,7 +52,7 @@ public class RhythmNote : MonoBehaviour
         spriteRenderer.sprite = DirectionSprites[(int)direction];
     }
 
-    private void moveNote() { 
+    private void MoveNote() { 
         if(noteDirection == GameManager.DirEnum.DirLeft)
             transform.transform.Translate(Vector3.left * speed * Time.deltaTime);
         else if(noteDirection == GameManager.DirEnum.DirRight)
@@ -74,7 +73,9 @@ public class RhythmNote : MonoBehaviour
 
     public void MissNote()
     {
-        //TODO add miss effects here
+        //Lose life on miss
+        GameManager.instance.AddLife(-5);
+
         rb.gravityScale = Random.Range(0.8f,1.2f);
         rb.AddTorque(Random.Range(-0.1f,0.1f), ForceMode2D.Impulse);
         rb.AddForce(new Vector2(Random.Range(-0.2f,0.2f),1f) * Random.Range(2f,5f), ForceMode2D.Impulse);
