@@ -3,13 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtons : MonoBehaviour
 {
-    public int GameSceneNum;
-
     public void StartGame()
     {
         Debug.Log("Started game");
-        SceneManager.LoadScene(GameSceneNum);
-    } 
+        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // change to game
+    }
 
     public void QuitGame()
     {

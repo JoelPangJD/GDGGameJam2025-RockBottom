@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Green_rectangle.svg_0: 5756541970600169204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

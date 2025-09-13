@@ -46,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("go to mm");
         PauseMenuCanvas.SetActive(false);
-        SceneManager.LoadScene(0); // change to main menu
+        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); // change to main menu
     }
 }
