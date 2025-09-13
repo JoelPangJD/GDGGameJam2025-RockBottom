@@ -65,6 +65,7 @@ public class MusicManager : MonoBehaviour
         yield return new WaitForSeconds(5.0f); // Optional delay before action
         GameManager.instance.player1RhythmManager.StartSpawning();
         GameManager.instance.player2RhythmManager.StartSpawning();
+        StartCoroutine(CheckMusicEnd());
         PlayMusic();
     }
 
@@ -85,6 +86,7 @@ public class MusicManager : MonoBehaviour
     public void RampMusicUp()
     {
         tempoScale += 0.5f;
+        SetTempoScale(tempoScale);
     }
     // Update is called once per frame
     void Update()
