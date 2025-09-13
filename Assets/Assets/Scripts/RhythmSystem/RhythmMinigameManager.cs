@@ -55,6 +55,14 @@ public class RhythmMinigameManager : MonoBehaviour
     float goodHitRange = 1.0f;
     float perfectHitRange = 0.5f;
 
+    //The distance the notes have to travel to reach the hit point
+    float noteTravelDistance = 0.0f;
+    [SerializeField]
+    int startingDelayBeats = 4;
+    [SerializeField]
+    float noteEveryNumberBeats = 1.0f;
+    [SerializeField]
+    float noteSpeed = 5.0f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -69,8 +77,11 @@ public class RhythmMinigameManager : MonoBehaviour
             rhythmNotePool.Add(newNote.GetComponent<RhythmNote>());
         }
 
+        //Get the distance the notes have to travel to reach the hit point from the spawn points
+        noteTravelDistance = Vector2.Distance(leftSpawnPoints[0].position, rightSpawnPoints[0].position);
+
         //test spawn code
-        StartCoroutine(TestSpawn());
+        StartCoroutine(SpawnNotes());
     }
 
     // Update is called once per frame
@@ -97,10 +108,19 @@ public class RhythmMinigameManager : MonoBehaviour
         //If a note was hit, do something with it
         if (hitNote.hitNote != null)
         {
-            //TODO do something with the hit note, like increase score or give feedback
-            Debug.Log("Hit note at distance: " + hitNote.hitDistance);
-
-            hitNote.hitNote.SetActive(false);
+            if (hitNote.hitDistance <= perfectHitRange)
+            {
+                hitNote.hitNote.GetComponent<RhythmNote>().HitPerfectNote();
+            }
+            else if (hitNote.hitDistance <= goodHitRange)
+            {
+                hitNote.hitNote.GetComponent<RhythmNote>().HitNote();
+            }
+            else
+            {
+                //Hitting too far away is a miss
+                hitNote.hitNote.GetComponent<RhythmNote>().MissNote();
+            }
         }
     }
 
@@ -109,7 +129,7 @@ public class RhythmMinigameManager : MonoBehaviour
         //Spawns a rhythm note at the top of the screen and moves it down
         RhythmNote newNote = GetNoteFromPool();
         //Initialise the note with the correct direction
-        newNote.InitaliseNote(noteDirection, currentSpawnDirection);
+        newNote.InitaliseNote(noteDirection, currentSpawnDirection, noteTravelDistance, noteSpeed);
         //Set it to the correct positions, if moving right, spawn on the left
         if (currentSpawnDirection == GameManager.DirEnum.DirRight)
         {
@@ -121,17 +141,28 @@ public class RhythmMinigameManager : MonoBehaviour
         //Then set the note to be active
         newNote.gameObject.SetActive(true);
 
-        //newNote.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -5);
     }
 
-    IEnumerator TestSpawn()
+    //Get the time it takes for a note to travel from the spawn point to the hit point in seconds
+    public float CalculateNoteTravelTime()
     {
+        //Calculate the time it takes for a note to travel from the spawn point to the hit point
+        return noteTravelDistance / noteSpeed;
+    }
+
+    IEnumerator SpawnNotes()
+    {
+        
+        //Skip the first few beats to give the player time to prepare
+        yield return new WaitForSeconds(MusicManager.instance.GetBeatInterval()*startingDelayBeats /*- CalculateNoteTravelTime() */+ MusicManager.instance.firstBeatBufferTime);
+
         while (true) // Loop indefinitely
         {
             int randomDirection = Random.Range(0, 4);
             SpawnRhythmNote((GameManager.DirEnum)randomDirection);
+            //SpawnRhythmNote(GameManager.DirEnum.DirUp);
 
-            yield return new WaitForSeconds(1.0f); // Wait 
+            yield return new WaitForSeconds(MusicManager.instance.GetBeatInterval() * noteEveryNumberBeats); // Wait 
         }
     }
 
