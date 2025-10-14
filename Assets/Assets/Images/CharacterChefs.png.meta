@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: f0b994dd955a2ff408f898ed8216f14f
+guid: 0e898fffc605e9e41a59ad427bac2097
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7511021901398900756
-    second: Cutting-Sheet_0
+      213: 931105537831985128
+    second: CharacterChefs_0
+  - first:
+      213: 6146096424581905008
+    second: CharacterChefs_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cutting-Sheet_0
+      name: CharacterChefs_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1554
-        height: 391
+        width: 247
+        height: 507
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cef70f2306d73c790800000000000000
-      internalID: -7511021901398900756
+      spriteID: 8efdfdead83fbec00800000000000000
+      internalID: 931105537831985128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterChefs_1
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 0
+        width: 248
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ab08e72225b4550800000000000000
+      internalID: 6146096424581905008
       vertices: []
       indices: 
       edges: []
@@ -134,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Cutting-Sheet_0: -7511021901398900756
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
